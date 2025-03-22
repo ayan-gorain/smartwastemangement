@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recyclean - Environmental Services</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav-header">
+      <div class="nav-container">
+        <h1 class="logo">Recyclean</h1>
+        <button
+          class="mobile-menu-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Services</a>
+          <a href="#" class="nav-link">Our Store</a>
+          <a href="#" class="nav-link">Blogs</a>
+          <a href="#" class="nav-link">Contact us</a>
+        </nav>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ae29991b262d2bbe011bdac297d00532e14d306"
+          alt="Profile"
+          class="profile-icon"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/9988b374ce4b0d63000bd33316604f318d65e1cb"
+          alt="People stacking hands"
+          class="hero-image"
+        />
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h2 class="hero-title">
+              <span>Your</span>
+              <span class="highlight">PLANET</span>
+              <span>Needs You</span>
+            </h2>
+            <p class="hero-description">
+              Facing any kind of problem ? Do let us know so that we can fix it!
+            </p>
+          </div>
+        </div>
+      </section>
+
+   
+
+      <section class="services-section">
+        <div class="service-card">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/038971ce0ecb00568ec1968f3598ffd1d363f8d0"
+            alt="Bin"
+            class="card-icon"
+          />
+          <h3 class="card-title">Bin Issues</h3>
+        </div>
+        <div class="service-card">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/97c0bb7573acf0703fa4b1a516473fd97006c715"
+            alt="Trash"
+            class="card-icon"
+          />
+          <h3 class="card-title">Trash Trouble</h3>
+        </div>
+        <div class="service-card">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b734b071b53809fe2cac71b5893cfc02c132a2fc"
+            alt="Fire"
+            class="card-icon"
+          />
+          <h3 class="card-title">Fire Watch</h3>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" placeholder="Full Name" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">
+                House Number
+                <span class="required">*</span>
+              </label>
+              <input
+                type="text"
+                placeholder="5C/22"
+                class="form-input"
+                id="house-number"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              Address
+              <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter your address here"
+              class="form-input"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              Upload Picture
+              <span class="required">*</span>
+            </label>
+            <div class="upload-container">
+              <input
+                type="file"
+                id="file-upload"
+                class="form-input file-input"
+                accept=".jpg,.jpeg,.png,.pdf"
+                aria-label="Upload file"
+                required
+              />
+              <span class="file-name"></span>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/49120fc33e26aa5b09efac14663987df0da78a76"
+                alt="Upload"
+                class="upload-icon"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
