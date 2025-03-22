@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #7148fc, #0cdfef);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.leaf {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    clip-path: path('M15,0 C20,10 25,15 30,20 C25,25 20,28 15,30 C10,28 5,25 0,20 C5,15 10,10 15,0');
+    transform: rotate(45deg);
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #51ff00;
+    letter-spacing: 1px;
+}
+
+/* Section Styles */
+.section {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.left-arrow, .right-arrow {
+    width: 100px;
+    height: 100px;
+}
+
+.content {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-aligned {
+    justify-content: flex-end;
+}
+
+.green-line {
+    display: inline-block;
+    height: 10px;
+    background-color: #51ff00;
+    flex: 1;
+}
+
+.problem-title {
+    color: #ff0004;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.solution-title {
+    color: #7148fc;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Problem Content Styles */
+.problem-content {
+    display: flex;
+    gap: 30px;
+}
+
+.problem-text {
+    flex: 1;
+}
+
+.problem-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.india-map {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Solution Content Styles */
+.solution-content {
+    display: flex;
+    gap: 30px;
+}
+
+.building-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.building {
+    max-width: 100%;
+    height: auto;
+}
+
+.solution-text {
+    flex: 1;
+}
+
+.solution-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Button Styles */
+.learn-more {
+    background-color: #65ff6f;
+    color: #000000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #2bd614;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .problem-content, .solution-content {
+        flex-direction: column;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .problem-title, .solution-title {
+        font-size: 28px;
+    }
+    
+    .left-arrow, .right-arrow {
+        display: none;
+    }
+}
